@@ -1,3 +1,4 @@
+<pre>
 Usage:
 ---------------------
 
@@ -30,3 +31,4 @@ HTML:
 -------------
 
 <div id="galleryFlipper1"></div>
+</pre>
