@@ -26,5 +26,5 @@ NECESSARY CSS:
 
 HTML:
 <pre>
-<div id="galleryFlipper1"></div>
+&lt;div id="galleryFlipper1"&gt;&lt;/div&gt;
 </pre>
