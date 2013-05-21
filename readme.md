@@ -1,4 +1,9 @@
-Usage:
+A generic javascript function that will create a randomly timed image "flipper".  The image container will flip in 3D and be replaced with a new random image from a sprite.  CSS Transitions and Transforms are used when supported with a graceful fallback to regular jQuery fades if not.
+
+Images must be stored in a horizontal sprite, with each image the exact same dimentions.  So, for example, a sprite containing 10 images that are 100x100 will be 100 pixels tall by 1000 pixels wide with the 10 images alinged horizontally (no space between images).
+
+
+<b>Usage:</b>
 <pre>
 var myflip = new PhotoFlipper({ 
     sel: '#galleryFlipper1',
@@ -12,7 +17,7 @@ var myflip = new PhotoFlipper({
 });
 </pre>
 
-NECESSARY CSS:
+<b>Necessary CSS:</b>
 <pre>
 .flip-container { -moz-perspective: 1000; -ms-perspective: 1000; -webkit-perspective: 1000; perspective: 1000; }
 .flip-container.hover .flipper { -moz-transform: rotateY(180deg); -ms-transform: rotateY(180deg); -o-transform: rotateY(180deg); -webkit-transform: rotateY(180deg); transform: rotateY(180deg);  }
@@ -24,7 +29,7 @@ NECESSARY CSS:
 .flip-container .back { -moz-transform: rotateY(-180deg); -ms-transform: rotateY(-180deg); -o-transform: rotateY(-180deg); -webkit-transform: rotateY(-180deg); transform: rotateY(-180deg); }
 </pre>
 
-HTML:
+<b>HTML:</b>
 <pre>
 &lt;div id="galleryFlipper1"&gt;&lt;/div&gt;
 </pre>
